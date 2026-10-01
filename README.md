@@ -1,33 +1,47 @@
-# Elevate-Labs-task1
-# Task 1: Data Cleaning and Preprocessing
+# Data Cleaning and Preprocessing
 
 ## Objective
-
-The objective of this task is to clean and preprocess a raw dataset by identifying and handling common data problems such as missing values, duplicate records, inconsistent text formats, date formats, and incorrect data types.
+To clean and preprocess a raw dataset by handling missing values, duplicate records, inconsistent text, date formats, and incorrect data types.
 
 ## Tools Used
-
 - Python
 - Pandas
 - Pydroid 3
 
 ## Dataset
-
-A sample customer dataset was created containing the following columns:
-
+The dataset contains customer information with the following columns:
 - Name
 - Age
 - Gender
 - Country
 - Date
 
-The dataset contains missing values, duplicate records, inconsistent text formats, and different data types to demonstrate the data cleaning process.
+## Data Cleaning Process
 
-## Data Cleaning Steps
+The following steps were performed:
 
-### 1. Identify Missing Values
+1. Checked for missing values using `isnull()`.
+2. Filled missing values with suitable values.
+3. Removed duplicate rows using `drop_duplicates()`.
+4. Standardized Gender values such as `Male`, `male`, and `FEMALE`.
+5. Standardized country names.
+6. Converted the Date column into datetime format.
+7. Cleaned column names by converting them to lowercase.
+8. Corrected data types such as Age to integer.
 
-Missing values were identified using:
+## Result
 
-```python
-df.isnull().sum()
+After cleaning:
+
+- No missing values remain.
+- Duplicate records were removed.
+- Text values are standardized.
+- Dates are in a consistent format.
+- Column names are clean and uniform.
+- Data types are corrected.
+
+## Output
+
+The cleaned dataset is ready for further data analysis and visualization.
+
+**Status:** Completed Successfully ✅
